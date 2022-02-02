@@ -5,13 +5,27 @@ import logoutButton from "../../assets/logoutButton.png";
 import newEntryIcon from "../../assets/newEntryButtonIcon.png";
 import newExitIcon from "../../assets/newExitButtonIcon.png";
 
+import { useNavigate } from "react-router-dom"
+
 function Wallet() {
+  const navigate = useNavigate();
+
+  function handleLogout() {
+    const result = window.confirm("Tem certeza que deseja deslogar?");
+
+    if (result) {
+      const removing = localStorage.removeItem("auth");
+      console.log(removing); 
+      navigate("/");
+    } 
+      
+  }
 
   return (
     <Container>
       <Header>
         <span>Olá fulano!</span>
-        <img src={logoutButton} alt="logout button"/>
+        <img src={logoutButton} alt="logout button" onClick={handleLogout}/>
       </Header>
       <RegisterSection>
         <p>Não há registros de<br/>entrada ou saída</p>

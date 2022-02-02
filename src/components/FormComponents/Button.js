@@ -11,7 +11,12 @@ const Button = styled.button`
   font-size: 20px;
   line-height: 23px;
   text-align: center;
-  color: #FFFFFF;
+  color: #fff;
+
+  :disabled {
+    opacity: 0.7;
+    color: rgb(256, 256, 256, 0.8);
+  }
 `;
 
 export default Button;
