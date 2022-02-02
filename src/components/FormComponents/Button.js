@@ -7,6 +7,9 @@ const Button = styled.button`
   background: #A328D6;
   border-radius: 5px;
 
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
   text-align: center;
   color: #FFFFFF;
 `;

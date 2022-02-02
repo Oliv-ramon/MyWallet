@@ -1,40 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const Container = styled.main`
-  box-sizing: border-box;
-
-  min-height: 100vh;
-  padding: 0 24px;
-
-  background-color: #925EBE; 
-
-  * {
-    box-sizing: border-box;
-    font-family: 'Lexend Deca', sans-serif;
-  }
-  `;
-
-const Header = styled.header`
-  padding: 25px 0 22px 0;
-
-  display: flex;
-  justify-content: space-between;
-
-  span {
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    color: #FFFFFF;   
-  }
-
-  img {
-    height: 24px;
-    width: 23px;
-    color: #FFFFFF;
-  }
-`;
-
 const RegisterSection = styled.section`
   width: 100%;
   height: 446px;
@@ -94,8 +60,6 @@ const Footer = styled.footer`
 `;
 
 export {
-  Header,
-  Container,
   RegisterSection,
   ActionLinks,
   Footer

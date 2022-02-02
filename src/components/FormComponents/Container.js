@@ -16,7 +16,7 @@ const Container = styled.main`
 
   * {
     box-sizing: border-box;
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'RaleWay', sans-serif;
   }
 
   img {
