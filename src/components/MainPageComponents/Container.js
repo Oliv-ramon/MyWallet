@@ -6,7 +6,7 @@ const Container = styled.main`
   min-height: 100vh;
   padding: 0 24px;
 
-  background-color: #925EBE; 
+  background-color: rgb(146, 94, 190); 
 
   * {
     box-sizing: border-box;

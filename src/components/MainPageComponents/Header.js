@@ -18,6 +18,10 @@ const Header = styled.header`
     width: 23px;
     color: #FFFFFF;
   }
+  ion-icon {
+    font-size: 30px;
+    color: #fff;
+  }
 `;
 
 export default Header;
