@@ -13,8 +13,7 @@ function SignIn() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    console.log(auth);
-    if (auth && auth.token) navigate("wallet");
+    if (auth && auth.token) navigate("/wallet");
   }, []);
 
   function handleChange(e) {

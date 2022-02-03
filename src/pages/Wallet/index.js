@@ -6,19 +6,26 @@ import newEntryIcon from "../../assets/newEntryButtonIcon.png";
 import newExitIcon from "../../assets/newExitButtonIcon.png";
 
 import { useNavigate } from "react-router-dom"
+import { useContext, useEffect } from "react";
+import AuthContext from "../../contexts/AuthContext";
 
 function Wallet() {
   const navigate = useNavigate();
+  const { auth, logout } = useContext(AuthContext);
+
+  useEffect(() => {
+    console.log(!auth)
+    if (!auth?.token) navigate("/");
+
+  }, []);
 
   function handleLogout() {
-    const result = window.confirm("Tem certeza que deseja deslogar?");
+    const result = window.confirm("Tem certeza que deseja sair?");
 
     if (result) {
-      const removing = localStorage.removeItem("auth");
-      console.log(removing); 
+      logout();
       navigate("/");
     } 
-      
   }
 
   return (
