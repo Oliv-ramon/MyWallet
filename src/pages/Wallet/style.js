@@ -1,27 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const RegisterSection = styled.section`
-  width: 100%;
-  height: 446px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background: #FFFFFF;
-  border-radius: 5px;
-
-  p {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-
-    color: #868686;
-  }
-`;
-
 const ActionLinks = styled(Link)`
   width: 155px;
   height: 114px;
@@ -60,7 +39,6 @@ const Footer = styled.footer`
 `;
 
 export {
-  RegisterSection,
   ActionLinks,
   Footer
 }

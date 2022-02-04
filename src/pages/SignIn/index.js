@@ -32,6 +32,7 @@ function SignIn() {
       navigate("/wallet");
     } catch (error) {
       console.log(error);
+      setIsLoading(false);
       alert("Erro, tente novamente");
     }
   }
