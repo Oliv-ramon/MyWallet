@@ -7,7 +7,7 @@ export default function TransactionsSection({ transactions }) {
 
   return (
     <Section>
-      {transactions ? transactionsList : defaultElement}
+      {transactions?.length > 0 ? transactionsList : defaultElement}
     </Section>
   )
 }

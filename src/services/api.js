@@ -15,7 +15,7 @@ function signIn(formData) {
 }
 
 function getTransactions(token)  {
-  const promisse = axios.get(`${BASE_URL}/transactions`, {}, {
+  const promisse = axios.get(`${BASE_URL}/transactions`, {
     headers: {
       Authorization: `Bearer ${token}`
     }

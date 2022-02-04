@@ -14,7 +14,7 @@ function SignIn() {
 
   useEffect(() => {
     if (auth && auth.token) navigate("/wallet");
-  }, []);
+  }, [auth, navigate]);
 
   function handleChange(e) {
     setFormData({ ...formData, [e.target.name]: e.target.value })
