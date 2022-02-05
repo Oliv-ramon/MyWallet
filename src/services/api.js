@@ -24,10 +24,21 @@ function getTransactions(token)  {
   return promisse;
 }
 
+function postTransactions(transaction, token)  {
+  const promisse = axios.post(`${BASE_URL}/transactions`, {transaction},{
+    headers: {
+      Authorization: `Bearer ${token}`
+    }
+  });
+
+  return promisse;
+}
+
 const api = {
   signUp,
   signIn,
   getTransactions,
+  postTransactions,
 }
 
 export default api;

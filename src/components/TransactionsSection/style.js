@@ -33,7 +33,7 @@ const Section = styled.section`
   }
 `;
 
-const Transaction = styled.li`
+const TransactionContainer = styled.li`
   display: flex;
   gap: 8px;
 
@@ -55,5 +55,5 @@ const Transaction = styled.li`
 
 export {
   Section,
-  Transaction,
+  TransactionContainer,
 }

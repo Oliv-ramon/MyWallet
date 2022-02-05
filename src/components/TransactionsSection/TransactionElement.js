@@ -1,12 +1,12 @@
-import { Transaction } from "./style";
+import { TransactionContainer } from "./style";
 
 export default function TransactionElement({ date, description, value, type }) {
   return (
-    <Transaction type={type}>
+    <TransactionContainer type={type}>
       <span className="date">{date} </span>
       <span className="description">{description}</span>
       <span className="value">{value}</span>
-    </Transaction>
+    </TransactionContainer>
   )
 }
 

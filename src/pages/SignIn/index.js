@@ -48,7 +48,7 @@ function SignIn() {
           placeholder="E-mail"
           value={formData.email}
           onChange={handleChange}
-          required
+          requiredf
         />
         <Input
           type="password"
