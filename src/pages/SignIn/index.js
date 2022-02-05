@@ -14,6 +14,7 @@ function SignIn() {
 
   useEffect(() => {
     if (auth && auth.token) navigate("/wallet");
+
   }, [auth, navigate]);
 
   function handleChange(e) {

@@ -19,9 +19,24 @@ const Section = styled.section`
 
     color: #868686;
   }
+
+  ul  {
+    width: 100%;
+    padding: 23px 12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-self: flex-start;
+
+    overflow: scroll;
+  }
 `;
 
 const Transaction = styled.li`
+  display: flex;
+  gap: 8px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -33,7 +48,8 @@ const Transaction = styled.li`
     color: #000000;
   }
   .value {
-    color: ${({type}) => type === "entry" ? "#C70000" : "#03AC00"};
+    color: ${({type}) => type === "exit" ? "#C70000" : "#03AC00"};
+    margin-left: auto;
   }
 `;
 
