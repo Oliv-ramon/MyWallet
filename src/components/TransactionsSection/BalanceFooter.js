@@ -28,7 +28,6 @@ export default function BalanceFooter({transactions}) {
     
     if (validValue % 1 === 0 && !validValue.includes(",")) {
       validValue = `${validValue},00`;
-      console.log(validValue)
     }
 
     return validValue;

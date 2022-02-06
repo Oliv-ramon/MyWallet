@@ -43,6 +43,7 @@ function SignUp() {
       navigate("/");
     } catch (error) {
       console.log(error);
+      setIsLoading(false);
       alert("Erro, tente novamente");
     }
   }

@@ -38,7 +38,7 @@ function Wallet() {
   return (
     <Container>
       <Header>
-        <span>Olá {auth.userName}!</span>
+        <span>Olá {auth?.userName}!</span>
         <img src={logoutButton} alt="logout button" onClick={handleLogout}/>
       </Header>
       <TransactionsSection transactions={transactions}/>
