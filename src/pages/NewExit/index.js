@@ -22,17 +22,33 @@ function NewExit() {
   }
 
   async function handleSubmit(e) {
+    e.preventDefault();
+
     setIsLoading(true);
 
     try {
-      await api.postTransactions(transaction, token);
+      const formatedValue = handleFormatValue(transaction.value);
+      await api.saveTransactions({...transaction, value: formatedValue}, token);
       setIsLoading(false);
       navigate("/wallet");
     } catch (error) {
       console.log(error);
       setIsLoading(false);
+      setTransaction({ ...transaction, value: "", description: "" })
       alert("Erro, tente novamente");
     }
+  }
+
+  function handleFormatValue(value) {
+    let validValue = value.replace(",", ".");
+
+    if (isNaN(validValue)) alert("Valor precisa ser um número");
+
+    if (validValue % 1 === 0 && !validValue.includes(".")) {
+      validValue = `${validValue}.00`;
+    }
+
+    return validValue;
   }
 
   return (

@@ -1,3 +1,4 @@
+import BalanceFooter from "./BalanceFooter";
 import { Section } from "./style";
 import TransactionElement from "./TransactionElement";
 
@@ -7,7 +8,15 @@ export default function TransactionsSection({ transactions }) {
 
   return (
     <Section>
-      {transactions?.length > 0 ? <ul>{transactionsList}</ul> : defaultElement}
+      {transactions?.length > 0 ? 
+        (
+          <>
+            <ul>{transactionsList}</ul>
+            <BalanceFooter transactions={transactions}/>
+          </>
+        ) : defaultElement
+      }
+
     </Section>
   )
 }
