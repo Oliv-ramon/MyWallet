@@ -5,7 +5,13 @@ export default function BalanceFooter({transactions}) {
 
   function handleTotalCalculate() {
     if (transactions.length === 1) { 
-      return transactions[0].value;
+      const isEntry = transactions[0].type === "entry";
+
+      if (isEntry) {
+        return Number(transactions[0].value);
+      } else {
+        return Number(transactions[0].value)*-1;
+      }
     };
     
     let total = 0;
@@ -17,6 +23,7 @@ export default function BalanceFooter({transactions}) {
         total -= Number(t.value)
       }
     });
+    console.log(total)
 
     return total;
   }
