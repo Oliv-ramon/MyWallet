@@ -5,11 +5,11 @@ import AuthContext from "./AuthContext";
 const TransactionsContext = createContext();
 
 export function TransactionsProvider({ children }) {
-  const { auth: {token} } = useContext(AuthContext);
+  const { auth } = useContext(AuthContext);
   const [transactions, setTransactions] = useState();
   
   async function handleLoadTransactions() {
-    const { data } = await api.getTransactions(token);
+    const { data } = await api.getTransactions(auth?.token);
     setTransactions(data);
   }
 
