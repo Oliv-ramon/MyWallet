@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "https://git.heroku.com/mywallet00.git";
+const BASE_URL = process.env.REACT_APP_API;
 
 function signUp(formData) {
   const promisse = axios.post(`${BASE_URL}/auth/sign-up`, formData);
