@@ -3,10 +3,12 @@ import api from "../../services/api";
 import AuthContext from "../../contexts/AuthContext";
 import { TransactionContainer } from "./style";
 import TransactionsContext from "../../contexts/TransactionsContext";
+import { useNavigate } from "react-router-dom";
 
 export default function TransactionElement({ _id, date, description, value, type }) {
   const { auth: { token } } = useContext(AuthContext);
-  const { handleLoadTransactions } = useContext(TransactionsContext);
+  const { handleLoadTransactions, setApiMethod } = useContext(TransactionsContext);
+  const navigate = useNavigate();
 
   async function handleDelete() {
     const result = window.confirm("Deseja excluir essa trasação?");
@@ -16,6 +18,22 @@ export default function TransactionElement({ _id, date, description, value, type
     try {
       await api.deleteTransaction(_id, token);
       handleLoadTransactions();
+    } catch (error) {
+      console.log(error);
+      alert("Erro, tente novamente");
+    }
+  }
+
+  async function handleUpdate() {
+    if (type === "exit") {
+      setApiMethod("put")
+      navigate("/new-exit");
+    } else {
+      navigate("/new-entry");
+    }
+
+    try {
+      await api.updateTransaction(_id, token);
     } catch (error) {
       console.log(error);
       alert("Erro, tente novamente");

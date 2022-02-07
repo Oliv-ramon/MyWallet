@@ -49,12 +49,24 @@ function deleteTransaction(transactionId, token)  {
   return promisse;
 }
 
+function updateTransaction(transactionId, token)  {
+  const promisse = axios.put(`${BASE_URL}/transactions/${transactionId}`,
+  {
+    headers: {
+      Authorization: `Bearer ${token}`
+    }
+  });
+
+  return promisse;
+}
+
 const api = {
   signUp,
   signIn,
   getTransactions,
   saveTransactions,
   deleteTransaction,
+  updateTransaction,
 }
 
 export default api;
