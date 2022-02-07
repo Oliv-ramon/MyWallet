@@ -9,6 +9,10 @@ export default function TransactionElement({ _id, date, description, value, type
   const { handleLoadTransactions } = useContext(TransactionsContext);
 
   async function handleDelete() {
+    const result = window.confirm("Deseja excluir essa trasação?");
+
+    if (!result) return;
+
     try {
       await api.deleteTransaction(_id, token);
       handleLoadTransactions();
