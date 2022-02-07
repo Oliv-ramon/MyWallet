@@ -5,26 +5,21 @@ import newEntryIcon from "../../assets/newEntryButtonIcon.png";
 import newExitIcon from "../../assets/newExitButtonIcon.png";
 
 import { useNavigate } from "react-router-dom"
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect } from "react";
 
 import AuthContext from "../../contexts/AuthContext";
-import api from "../../services/api";
 import TransactionsSection from "../../components/TransactionsSection";
+import TransactionsContext from "../../contexts/TransactionsContext";
 
 function Wallet() {
   const navigate = useNavigate();
   const { auth, logout } = useContext(AuthContext);
-  const [transactions, setTransactions] = useState();
+  const { handleLoadTransactions, transactions } = useContext(TransactionsContext);
 
   useEffect(() => {
     if (!auth?.token) return navigate("/");
     handleLoadTransactions();
   }, []);
-
-  async function handleLoadTransactions() {
-    const { data } = await api.getTransactions(auth.token);
-    setTransactions(data);
-  }
 
   function handleLogout() {
     const result = window.confirm("Tem certeza que deseja sair?");

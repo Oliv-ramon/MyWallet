@@ -60,6 +60,10 @@ const TransactionContainer = styled.li`
     margin-left: auto;
     word-break: break-all;
   }
+
+  button {
+    color: #C6C6C6;
+  }
 `;
 
 const Footer = styled.footer`
