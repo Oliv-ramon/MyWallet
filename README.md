@@ -31,22 +31,29 @@ I'll add two more feature in the future: when you click in the name of some tran
 - Styled Components
 - Axios
 
-### To run this project
+### Installing this project
 
-**Cloning the Repository**
+ - **Cloning the Repository**
 
 ```
 $ git clone https://github.com/Oliv-ramon/MyWallet
+
 $ cd MyWallet
 ```
 
-**Installing dependencies**
+ - **Installing dependencies**
 
 ```
-$ npm install
+$ npm i
 ```
 
-**Running the app**
+### Connecting the App with the Server
+
+ - Follow the instructions on the [MyWallet-Server](https://github.com/steniowagner/mindcast-server) to have the server up and running on your machine.
+
+ - With the server up and running, rename the file "example.env" to ".env". So you will have seted the value of the environment variable REACT_APP_API to localhost:5000.
+
+ - **Running**
 
 ```
 $ npm run start
