@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Section = styled.section`
   width: 100%;
-  height: 446px;
+  height: 368px;
 
   display: flex;
   justify-content: center;
@@ -25,8 +25,8 @@ const Section = styled.section`
 
   ul  {
     width: 100%;
-    height: 401px;
-    padding: 23px 12px 8px 12px;
+    height: 100%;
+    padding: 23px 12px 50px 12px;
 
     display: flex;
     flex-direction: column;

@@ -22,18 +22,14 @@ function Wallet() {
   }, []);
 
   function handleLogout() {
-    const result = window.confirm("Tem certeza que deseja sair?");
-
-    if (result) {
-      logout();
-      navigate("/");
-    } 
+    logout();
+    navigate("/"); 
   }
 
   return (
     <Container>
       <Header>
-        <span>Olá {auth?.userName}!</span>
+        <span>Olá, {auth?.userName}!</span>
         <img src={logoutButton} alt="logout button" onClick={handleLogout}/>
       </Header>
       <TransactionsSection transactions={transactions}/>
