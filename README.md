@@ -33,6 +33,22 @@ I'll add two more feature in the future: when you click in the name of some tran
 
 ### To run this project
 
-- First, you need to clone this repository, you can follow [this tutorial](/guides/content/editing-an-existing-page).
-- With the clone in your machine run `npm install`  to install the dependencies.
-- The last step is to run `npm run start`, and the app will be open in http://localhost:3000.
+**Cloning the Repository**
+
+```
+$ git clone https://github.com/Oliv-ramon/MyWallet
+$ cd MyWallet
+```
+
+**Installing dependencies**
+
+```
+$ npm install
+```
+
+**Running the app**
+
+```
+$ npm run start
+```
+The app will be open in http://localhost:3000.
