@@ -1,70 +1,38 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# TrackIt
 
-In the project directory, you can run:
+Your digital mobile wallet web app written in React that help you to manage your money.
 
-### `npm start`
+## A gif using the app
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Alt Text](MyWallet.gif)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Try by your self!
 
-### `npm test`
+my-wallet-kappa.vercel.app
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### About this project
 
-### `npm run build`
+This is one of the projects of my personal portfolio, so, any feedback about the project, code or anything that you can report that could make me a better developer will be welcome!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+In this app you can sign-up(just need a valid email, user,name and make the passwords match), login, with your email and password, and start to manage your money registering any transaction. you can also delect any transaction and make a logout (all this is demonstrated in the gif using the app).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This project was my first full-stack project(MyWallet - check the backend on the pinned projects), that is why the layout is so basic, by the way, i build this interface to test my knowlodge about react, react router, react hooks, styled componentes, context API and try to improve my architecture skills.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+I'll add two more feature in the future: when you click in the name of some transaction, it turn into a input that allow you to update the name of the the transaction.
 
-### `npm run eject`
+### Tecnologies used
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- React
+- React-Router
+- React Hooks
+- Context API
+- Styled Components
+- Axios
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### To run this project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- First, you need to clone this repository, you can follow [this tutorial](/guides/content/editing-an-existing-page)
+- With the clone in your machine run `npm install`  to install the dependencies
+- The last step is to run `npm run start`, and the app will be open in http://localhost:3000.
