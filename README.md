@@ -14,13 +14,13 @@ Your digital mobile wallet web app written in React that help you to manage your
 
 ### About this project
 
-This is one of the projects of my personal portfolio, so, any feedback about the project, code or anything that you can report that could make me a better developer will be welcome!
+This is one of the projects of my portfolio, so, any feedback about the project, code, or anything that you can report that could make me a better developer will be welcome!
 
-In this app you can sign-up(just need a valid email, user,name and make the passwords match), login, with your email and password, and start to manage your money registering any transaction. you can also delect any transaction and make a logout (all this is demonstrated in the gif using the app).
+In this app, you can sign-up(just need a valid email, username, and make the passwords match), login, with your email and password, and start to manage your money by registering any transaction. you can also delete any transaction and make a logout (all this is demonstrated in the gif using the app).
 
-This project was my first full-stack project(MyWallet - check the backend on the pinned projects), that is why the layout is so basic, by the way, i build this interface to test my knowlodge about react, react router, react hooks, styled componentes, context API and try to improve my architecture skills.
+This project was my first full-stack project(MyWallet - check the backend on the pinned projects), that is why the layout is so basic, by the way, i build this interface to test my knowledge about react, react-router, react hooks, styled-components, context API and try to improve my architecture skills.
 
-I'll add two more feature in the future: when you click in the name of some transaction, it turn into a input that allow you to update the name of the the transaction.
+I'll add two more features in the future: when you click on the name of some transaction, it turns into an input that allows you to update the name of the transaction.
 
 ### Tecnologies used
 
