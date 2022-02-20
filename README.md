@@ -14,7 +14,7 @@ Your digital mobile wallet web app written in React that help you to manage your
 
 ### About this project
 
-This is one of the projects of my portfolio, so, any feedback about the project, code, or anything that you can report that could make me a better developer will be welcome!
+This project is part of my portfolio, so, any feedback about the project, code, or anything that you can report that could make me a better developer will be welcome!
 
 In this app, you can sign-up(just need a valid email, username, and make the passwords match), login, with your email and password, and start to manage your money by registering any transaction. you can also delete any transaction and make a logout (all this is demonstrated in the gif using the app).
 
