@@ -10,7 +10,7 @@ Your digital mobile wallet web app written in React that help you to manage your
 
 ### Try by your self!
 
-my-wallet-kappa.vercel.app
+[deploy](https://my-wallet-kappa.vercel.app)
 
 ### About this project
 
@@ -49,7 +49,7 @@ $ npm i
 
 ### Connecting the App with the Server
 
- - Follow the instructions on the [MyWallet-Server](https://github.com/steniowagner/mindcast-server) to have the server up and running on your machine.
+ - Follow the instructions on the [MyWallet-Backend](https://github.com/Oliv-ramon/MyWallet-Backend) to have the server up and running on your machine.
 
  - With the server up and running, rename the file "example.env" to ".env". So you will have seted the value of the environment variable REACT_APP_API to localhost:5000.
 
