@@ -49,7 +49,7 @@ $ npm i
 
 ### Connecting the App with the Server
 
- - Follow the instructions on the [MyWallet-Backend](https://github.com/Oliv-ramon/MyWallet-Backend) to have the server up and running on your machine.
+ - Follow the instructions on the [MyWallet-Api](https://github.com/Oliv-ramon/mywallet-api) to have the server up and running on your machine.
 
  - With the server up and running, rename the file "example.env" to ".env". So you will have seted the value of the environment variable REACT_APP_API to localhost:5000.
 
